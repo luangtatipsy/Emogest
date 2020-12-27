@@ -1,0 +1,12 @@
+__pycache__/
+.coverage
+.coveragerc
+.DS_Store
+.env
+.ipynb_checkpoints
+.pytest_cache/
+.python-version
+.vscode/
+coverage.*
+env/
+htmlcov/
