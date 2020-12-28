@@ -22,7 +22,7 @@ if __name__ == "__main__":
     access_key = os.environ.get("TWITTER_ACCESS_TOKEN")
     access_secret = os.environ.get("TWITTER_ACCESS_TOKEN_SECERT")
 
-    num_tweets = 100  # Number of tweets by an emoji
+    num_tweets = 10000  # Number of tweets by an emoji
     current_year = datetime.now().year
     column_name = "tweet"
 
