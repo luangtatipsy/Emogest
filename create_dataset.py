@@ -42,7 +42,7 @@ if __name__ == "__main__":
     for ej in EMOJIS:
         print(f"start collecting tweets which contain {ej}...")
 
-        tweets = api.query_by_keyword(keyword=ej, count=num_tweets, batch=50)
+        tweets = api.query_by_keyword(keyword=ej, count=num_tweets)
 
         df = append_row(df, rows={column_name: tweets})
         dump_dataframe(df, output_file_path)
