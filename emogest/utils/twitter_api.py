@@ -66,8 +66,11 @@ class TwitterApiWrapper(object):
         )
         all_tweets.extend(tweets)
 
-        # save the last_seen_id tweet less one
-        last_seen_id = all_tweets[-1].id - 1
+        if len(all_tweets) > 0:
+            # save the last_seen_id tweet less one
+            last_seen_id = all_tweets[-1].id - 1
+        else:
+            return []
 
         while len(all_tweets) < count:
             tweets = self.api.search(
@@ -80,7 +83,10 @@ class TwitterApiWrapper(object):
 
             all_tweets.extend(tweets)
             # update the last_seen_id tweet less one
-            last_seen_id = tweets[-1].id - 1
+            if len(tweets) > 0:
+                last_seen_id = tweets[-1].id - 1
+            else:
+                break
 
             print(f"{len(all_tweets)} tweets downloaded so far")
 
