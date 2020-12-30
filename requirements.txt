@@ -1,6 +1,8 @@
 emoji==0.6.0
 jupyterlab
+newmm-tokenizer
 pandarallel==1.5.1
 pandas==1.2.0
 python-dotenv==0.15.0
+th-simple-preprocessor
 tweepy==3.10.0
