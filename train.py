@@ -59,16 +59,12 @@ if __name__ == "__main__":
     batch_size = args.batch_size
 
     tweets = pd.read_csv(os.path.join(dataset_dir, path_to_input_file))
+    tweets = tweets.groupby("emoji").filter(lambda c: len(c) > 1000)
 
     dataset = Dataset(df=tweets, x_column=x_column, y_column=y_column, test_size=0.1)
 
-    char_cnn = CharCNN(len(dataset.emojis))
-    char_input = Input(
-        shape=(dataset.max_sequence_len, len(dataset.chars)), name="char_cnn_input"
-    )
-    outputs = char_cnn(char_input)
-
-    model = Model(inputs=char_input, outputs=outputs)
+    model = CharCNN(len(dataset.emojis))
+    model.build(input_shape=(1, dataset.max_sequence_len, len(dataset.chars)))
     model.compile(
         loss="sparse_categorical_crossentropy", optimizer="rmsprop", metrics=["acc"]
     )
