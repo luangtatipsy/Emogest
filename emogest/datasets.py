@@ -1,4 +1,4 @@
-from typing import List, Tuple
+from typing import Tuple
 
 import numpy as np
 import pandas as pd
@@ -39,7 +39,7 @@ class Dataset:
 
         return chars, emojis, char_to_idx, emoji_to_idx, max_sequence_len
 
-    def split(self, test_size: float) -> None:
+    def split(self, test_size: float) -> Tuple[pd.DataFrame, pd.DataFrame]:
         training_set, test_set = train_test_split(
             self.df,
             test_size=test_size,

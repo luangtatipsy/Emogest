@@ -1,4 +1,3 @@
-import tensorflow.keras.callbacks
 from tensorflow.keras.layers import Conv1D, Dense, Dropout, Flatten, Input, MaxPooling1D
 from tensorflow.keras.models import Model
 
