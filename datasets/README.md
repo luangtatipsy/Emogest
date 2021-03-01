@@ -45,4 +45,4 @@ python create_dataset.py --num_tweets 10000 --output_file_path raw_data.csv
 ```
 
 ##### 5. Prepare the dataset
-Serve [`notebooks/preparation.ipynb`](https://github.com/luangtatipsy/emogest/blob/main/notebooks/preparation.ipynb) and execute all blocks (you might need to change the code as you need). A prepared dataset will be saved under `datasets` directory.
+Serve [`preparation.ipynb`](https://github.com/luangtatipsy/emogest/blob/main/preparation.ipynb) and execute all blocks (you might need to change the code as you need). A prepared dataset will be saved under `datasets` directory.
