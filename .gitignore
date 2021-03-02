@@ -12,3 +12,5 @@ env/
 htmlcov/
 datasets/*
 !datasets/README.md
+models/*
+!models/.gitkeep
