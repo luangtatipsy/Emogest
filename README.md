@@ -40,4 +40,4 @@ According to the result on [`result-analysis.ipynb`](https://github.com/luangtat
 As the result analysis above I did not mention about the word embedding model yet, for the experiments, the word embedding model is quite well. It can appropriately query similar words by the meaning. For example, a word to be queried is "น่ารัก", and the model return top 3 similar words: "หล่อ", "สวย", and "เท่".
 
 ## License
-This repository is distributed under [MIT License](https://github.com/luangtatipsy/intel-image-classification/blob/master/LICENSE)
+This repository is distributed under [MIT License](https://github.com/luangtatipsy/emogest/blob/master/LICENSE)
