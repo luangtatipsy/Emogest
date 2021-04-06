@@ -1,5 +1,8 @@
 # Emogest
-Preliminary ML model suggesting emojis given a short text. This project's objective is to demonstrate how to retrieve tweets from Twitter API and leverage the collected tweets as a dataset creating a preliminary text classification model in any certain tasks. For this demonstration, I selected the "Emoji Suggestion" task because it is one of the fastest tasks to auto-generate annotation for the collected tweets.
+Preliminary ML model suggesting emojis given a short text. This project's objective is to demonstrate how to retrieve tweets from Twitter API and leverage the collected tweets as a dataset creating a preliminary text classification model in any certain tasks. For this demonstration, I selected the "Emoji Suggestion" task because it is one of the fastest tasks to auto-generate annotation for the collected tweets. 
+
+## Article
+You can read my Medium article [here](https://luangtatipsy.medium.com/lets-suggest-an-emoji-to-your-short-text-58f186f7086e).
 
 ## Prerequisite
 - Git
