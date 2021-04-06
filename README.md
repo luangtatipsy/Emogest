@@ -1,9 +1,6 @@
 # Emogest
 Preliminary ML model suggesting emojis given a short text. This project's objective is to demonstrate how to retrieve tweets from Twitter API and leverage the collected tweets as a dataset creating a preliminary text classification model in any certain tasks. For this demonstration, I selected the "Emoji Suggestion" task because it is one of the fastest tasks to auto-generate annotation for the collected tweets. 
 
-## Article
-You can read my Medium article [here](https://luangtatipsy.medium.com/lets-suggest-an-emoji-to-your-short-text-58f186f7086e).
-
 ## Prerequisite
 - Git
 - Python 3.8.7
@@ -47,6 +44,9 @@ According to the result on [`result-analysis.ipynb`](https://github.com/luangtat
 
 ## Discussion
 As the result analysis above I did not mention about the word embedding model yet, for the experiments, the word embedding model is quite well. It can appropriately query similar words by the meaning. For example, a word to be queried is "น่ารัก", and the model return top 3 similar words: "หล่อ", "สวย", and "เท่".
+
+## Article
+This is a [link](https://luangtatipsy.medium.com/lets-suggest-an-emoji-to-your-short-text-58f186f7086e) to the article about this project.
 
 ## License
 This repository is distributed under [MIT License](https://github.com/luangtatipsy/emogest/blob/master/LICENSE)
